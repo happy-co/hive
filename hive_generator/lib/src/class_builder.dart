@@ -217,6 +217,5 @@ String _suffixFromType(DartType type) {
 }
 
 String _displayString(DartType e) {
-  var suffix = _suffixFromType(e);
-  return '${e.getDisplayString(withNullability: false)}$suffix';
+  return '${e.getDisplayString(withNullability: true)}';
 }
